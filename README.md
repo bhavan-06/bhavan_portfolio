@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bhavan Kumar Portfolio
 
 A modern and interactive personal portfolio website.
@@ -35,3 +36,6 @@ A modern and interactive personal portfolio website.
 Update personal information inside:
 
 `js/data.js`
+=======
+# bhavan_portfolio
+>>>>>>> 24331f7042e6f255a50aa8787b570bb4115e6a68
