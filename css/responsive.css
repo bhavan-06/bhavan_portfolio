@@ -1,0 +1,192 @@
+@media (max-width: 1000px) {
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        padding-top: 150px;
+
+    }
+
+    .hero-visual {
+
+        max-width: 600px;
+
+    }
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .projects-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 15px 5%;
+
+    }
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 5%;
+        right: 5%;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        background: var(--bg-secondary);
+
+        border: 1px solid var(--border);
+
+        border-radius: 15px;
+
+    }
+
+    .nav-links.active {
+
+        display: flex;
+
+    }
+
+    .mobile-menu {
+
+        display: block;
+
+        background: none;
+
+        border: none;
+
+        color: var(--text);
+
+        font-size: 20px;
+
+    }
+
+    .nav-cta {
+
+        display: none;
+
+    }
+
+    .about-grid,
+    .skills-layout,
+    .contact-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .services-grid,
+    .achievement-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .timeline::before {
+
+        left: 10px;
+
+    }
+
+    .timeline-item {
+
+        grid-template-columns: 1fr;
+
+        padding-left: 40px;
+
+        gap: 15px;
+
+    }
+
+    .timeline-card::before {
+
+        left: -37px;
+
+    }
+
+    .resume-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+
+    }
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .hero-title {
+
+        font-size: 60px;
+
+    }
+
+    .tech-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .stats-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .about-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .chat-container {
+
+        width: 90%;
+
+        right: 5%;
+
+    }
+
+}

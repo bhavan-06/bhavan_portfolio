@@ -1,0 +1,275 @@
+/* =========================================
+   RESET.CSS
+   Modern CSS Reset
+========================================= */
+
+
+/* BOX SIZING */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* REMOVE DEFAULT MARGINS */
+
+* {
+    margin: 0;
+}
+
+
+/* HTML */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* BODY */
+
+html,
+body {
+    min-height: 100%;
+}
+
+
+body {
+    line-height: 1.5;
+
+    -webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
+}
+
+
+/* MEDIA ELEMENTS */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+
+    max-width: 100%;
+}
+
+
+/* FORM ELEMENTS */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* BUTTON */
+
+button {
+    cursor: pointer;
+}
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* LISTS */
+
+ul,
+ol {
+    list-style: none;
+
+    padding: 0;
+}
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+}
+
+
+/* TEXTAREA */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* TABLES */
+
+table {
+    border-collapse: collapse;
+
+    border-spacing: 0;
+}
+
+
+/* REMOVE DEFAULT FIELDSET STYLE */
+
+fieldset {
+    border: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+/* ACCESSIBLE FOCUS */
+
+:focus-visible {
+    outline: 3px solid var(--secondary);
+
+    outline-offset: 4px;
+}
+
+
+/* HIDDEN ELEMENT */
+
+[hidden] {
+    display: none !important;
+}
+
+
+/* DISABLED */
+
+button:disabled,
+input:disabled,
+textarea:disabled {
+    cursor: not-allowed;
+
+    opacity: 0.6;
+}
+
+
+/* SCREEN READER ONLY */
+
+.sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+
+/* KEYBOARD NAVIGATION */
+
+.keyboard-navigation
+a:focus,
+
+.keyboard-navigation
+button:focus,
+
+.keyboard-navigation
+input:focus,
+
+.keyboard-navigation
+textarea:focus {
+
+    outline: 3px solid var(--primary);
+
+    outline-offset: 4px;
+
+}
+
+
+/* REDUCED MOTION */
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+
+    animation-duration:
+        0.01ms !important;
+
+    animation-iteration-count:
+        1 !important;
+
+    transition-duration:
+        0.01ms !important;
+
+    scroll-behavior:
+        auto !important;
+
+}
+
+
+/* SELECTION */
+
+::selection {
+
+    background:
+        var(--primary);
+
+    color:
+        white;
+
+}
+
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:
+        var(--bg);
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            var(--primary),
+            var(--secondary)
+        );
+
+    border-radius:
+        20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        var(--primary);
+
+}
